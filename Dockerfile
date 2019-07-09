@@ -1,4 +1,4 @@
-From tensorflow/tensorflow:0.11.0-gpu-jupyter
+From tensorflow/tensorflow:0.11.0-gpu
 
 RUN mkdir /tf/scene  
 
