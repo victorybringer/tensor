@@ -7,7 +7,7 @@ RUN mkdir /tf/scene
 COPY scene    /tf/scene
 
 
-RUN mkdir /tf/scene  && cd /tf/scene/ && pip install -r requirements.txt 
+RUN cd /tf/scene/ && pip install -r requirements.txt 
 
 
 
