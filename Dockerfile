@@ -1,6 +1,6 @@
-From tensorflow/tensorflow:0.11.0-gpu
+From tensorflow/tensorflow:1.4.0-gpu
 
-RUN mkdir /notebooks/scene  
+RUN mkdir /notebooks/scene  && apt-get update
 
 
 
