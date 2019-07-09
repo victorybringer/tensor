@@ -1,4 +1,4 @@
-From tensorflow/tensorflow:latest-gpu-jupyter
+From tensorflow/tensorflow:0.11.0-gpu-jupyter
 
 RUN mkdir /tf/scene  
 
@@ -15,3 +15,6 @@ RUN  apt-get -y install python-numpy && cd /tf/scene/lib && make
 
 
 RUN cd /tf/scene && chmod 777 ./download.sh && apt-get -y install wget && ./download.sh
+
+
+
