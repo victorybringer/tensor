@@ -1,20 +1,20 @@
 From tensorflow/tensorflow:0.11.0-gpu
 
-RUN mkdir /tf/scene  
+RUN mkdir /notebooks/scene  
 
 
 
-COPY scene    /tf/scene
+COPY scene    /notebooks/scene
 
 
-RUN cd /tf/scene/ && pip install -r requirements.txt 
+RUN cd /notebooks/scene/ && pip install -r requirements.txt 
 
 
 
-RUN  apt-get -y install python-numpy && cd /tf/scene/lib && make
+RUN  apt-get -y install python-numpy && cd /notebooks/scene/lib && make
 
 
-RUN cd /tf/scene && chmod 777 ./download.sh && apt-get -y install wget && ./download.sh
+RUN cd /notebooks/scene && chmod 777 ./download.sh && apt-get -y install wget && ./download.sh
 
 
 
