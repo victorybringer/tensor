@@ -18,4 +18,10 @@ RUN cd /notebooks/scene && chmod 777 ./download.sh && apt-get -y install wget &&
 
 
 
+RUN apt-get -y install python-tk
 
+
+WORKDIR /notebooks/scene
+
+
+RUN mkdir data/vg && cp mini_VG-SGG-dicts.json data/vg && cp mini_imdb_1024.h5 data/vg/ && cp mini_VG-SGG.h5 data/vg/ && cp  mini_proposals.h5 data/vg/
