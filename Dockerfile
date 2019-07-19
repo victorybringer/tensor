@@ -18,7 +18,7 @@ RUN cd /notebooks/scene && chmod 777 ./download.sh && apt-get -y install wget &&
 
 
 
-RUN apt-get -y install python-tk
+RUN apt-get -y install python-tk && apt-get -y install graphviz
 
 
 WORKDIR /notebooks/scene
