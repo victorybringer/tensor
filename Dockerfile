@@ -25,3 +25,6 @@ WORKDIR /notebooks/scene
 
 
 RUN mkdir data/vg && cp mini_VG-SGG-dicts.json data/vg && cp mini_imdb_1024.h5 data/vg/ && cp mini_VG-SGG.h5 data/vg/ && cp  mini_proposals.h5 data/vg/
+
+
+RUN rm -f  mini_VG-SGG-dicts.json  && rm -f mini_imdb_1024.h5  && rm -f mini_VG-SGG.h5  && rm -f  mini_proposals.h5 
