@@ -5,6 +5,9 @@
 # --------------------------------------------------------
 
 from fast_rcnn.config import cfg
+import cfg
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 from graphviz import Digraph
@@ -60,7 +63,7 @@ def draw_graph(labels, rels, cfg):
         u.edge(str(rel[0]), edge_key)
         u.edge(edge_key, str(rel[1]))
 
-    u.view()
+    
 
     return out_dict
 
