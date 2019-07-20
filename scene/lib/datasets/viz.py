@@ -3,9 +3,7 @@
 # Licensed under The MIT License [see LICENSE for details]
 # Written by Danfei Xu
 # --------------------------------------------------------
-
 from fast_rcnn.config import cfg
-import cfg
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
